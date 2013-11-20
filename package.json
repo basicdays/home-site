@@ -1,0 +1,25 @@
+{
+  "name": "home-site",
+  "version": "0.0.1",
+  "description": "Home site for basicdays.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/basicdays/home-site"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "basicdays",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/basicdays/home-site/issues"
+  },
+  "homepage": "https://github.com/basicdays/home-site",
+  "dependencies": {
+    "express": "~3.4.4"
+  }
+}
