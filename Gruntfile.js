@@ -22,19 +22,15 @@ exports = module.exports = function(grunt) {
 
 		shell: {
 			componentInstall: {command: 'component install --dev', options: shellOptions},
-			componentBuild: {
-				command: [
-					'component build --out ./lib/webUI/public',
-					'component build --dev --out ./test/public'
-				].join('&&'),
-				options: shellOptions
-			},
+			componentBuild: {command: 'component build --out ./lib/webUI/public/build', options: shellOptions},
+			componentBuildDev: {command: 'component build --dev --out ./test/build', options: shellOptions},
 			jshint: {command: 'jshint *.js **/*.js', options: shellOptions},
 			mocha: {command: 'mocha --harmony-generators --reporter spec --timeout 15s', options: shellOptions},
-			server: {command: 'node --debug=<%= debugPort %> --harmony-generators server.js', options: shellOptions}
+			server: {command: 'node --debug=<%= debugPort %> --harmony-generators server.js', options: shellOptions},
+			testServer: {command: 'http-server test', options: shellOptions}
 		},
 
-		clean: ['build']
+		clean: ['lib/webUI/public/build', 'test/build']
 	});
 
 	grunt.loadNpmTasks('grunt-shell');
@@ -42,7 +38,8 @@ exports = module.exports = function(grunt) {
 
 	grunt.registerTask('default', ['server']);
 	grunt.registerTask('install', ['shell:componentInstall']);
-	grunt.registerTask('build', ['shell:componentBuild']);
+	grunt.registerTask('build', ['shell:componentBuild', 'shell:componentBuildDev']);
 	grunt.registerTask('test', ['shell:jshint', 'shell:mocha']);
 	grunt.registerTask('server', ['shell:server']);
+	grunt.registerTask('testServer', ['shell:testServer']);
 };

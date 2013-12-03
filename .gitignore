@@ -3,7 +3,8 @@ node_modules
 
 # component
 components
-build
+build.css
+build.js
 
 # IDE Files
 .idea
