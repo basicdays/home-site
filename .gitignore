@@ -1,6 +1,10 @@
 # node.js
 node_modules
 
+# component
+components
+build
+
 # IDE Files
 .idea
 

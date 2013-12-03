@@ -1,25 +1,40 @@
 {
   "name": "home-site",
   "version": "0.0.1",
-  "description": "Home site for basicdays.com",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
+  "private": true,
+  "description": "Home site for http://basicdays.com",
+  "engines": {
+    "node": ">=0.11.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/basicdays/home-site"
+    "url": "https://github.com/basicdays/home-site.git"
   },
-  "keywords": [
-    "website"
-  ],
-  "author": "basicdays",
+  "keywords": [],
+  "author": "basicdays <info@basicdays.com> (http://basicdays.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/basicdays/home-site/issues"
   },
   "homepage": "https://github.com/basicdays/home-site",
+  "directories": {
+    "lib": "lib"
+  },
   "dependencies": {
-    "express": "~3.4.4"
+    "express": "~3.4.4",
+    "co": "~2.3.0",
+    "jade": "~0.35.0",
+    "clone-component": "~0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "chai": "~1.8.1",
+    "component": "~0.18.0",
+    "grunt": "~0.4.1",
+    "grunt-shell": "~0.6.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "jshint": "~2.3.0",
+    "uglify-js": "~2.4.3",
+    "clean-css": "~2.0.2"
   }
 }
