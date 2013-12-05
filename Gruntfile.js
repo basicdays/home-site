@@ -26,7 +26,7 @@ exports = module.exports = function(grunt) {
 			componentBuildDev: {command: 'component build --dev --out ./test/build', options: shellOptions},
 			jshint: {command: 'jshint *.js **/*.js', options: shellOptions},
 			mocha: {command: 'mocha --harmony-generators --reporter spec --timeout 15s', options: shellOptions},
-			server: {command: 'node --debug=<%= debugPort %> --harmony-generators server.js', options: shellOptions},
+			server: {command: 'node --harmony-generators server.js', options: shellOptions},
 			testServer: {command: 'http-server test', options: shellOptions}
 		},
 
