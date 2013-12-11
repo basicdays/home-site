@@ -1,0 +1,12 @@
+{
+	"name": "test",
+	"repo": "basicdays/home-site",
+	"version": "0.0.1",
+	"dependencies": {
+		"visionmedia/mocha": "*",
+		"chaijs/chai": "*"
+	},
+	"scripts": [
+		"../tests.js"
+	]
+}

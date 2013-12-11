@@ -30,7 +30,7 @@ exports = module.exports = function(grunt) {
 			testServer: {command: 'http-server test', options: shellOptions}
 		},
 
-		clean: ['lib/webUI/public/build', 'test/build']
+		clean: ['components', 'lib/webUI/public/build', 'test/build']
 	});
 
 	grunt.loadNpmTasks('grunt-shell');

@@ -1,16 +1,11 @@
 {
-  "name": "home-site",
-  "repo": "basicdays/home-site",
-  "description": "Home site for http://basicdays.com",
-  "version": "0.0.1",
-  "keywords": [],
-  "dependencies": {
-    "microjs/q": "*"
-  },
-  "development": {
-    "visionmedia/mocha": "*",
-    "chaijs/chai": "*"
-  },
-  "license": "MIT",
-  "paths": []
+	"name": "home-site",
+	"repo": "basicdays/home-site",
+	"description": "Home site for http://basicdays.com",
+	"version": "0.0.1",
+	"license": "MIT",
+	"local": ["home", "testClient"],
+	"paths": [
+		"lib/webUI/endpoints", "test"
+	]
 }

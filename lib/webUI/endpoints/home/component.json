@@ -1,0 +1,10 @@
+{
+	"name": "home",
+	"descriptioon": "home page",
+	"version": "0.0.1",
+	"dependencies": {
+		"component/reactive": "*"
+	},
+	"main": "index.js",
+	"scripts": ["component/index.js"]
+}
