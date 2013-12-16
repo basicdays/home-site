@@ -9,12 +9,7 @@
 		<div id="mocha"></div>
 		<script src="/build/build.js"></script>
 		<script>
-			require('mocha');
-			mocha.setup('bdd');
-		</script>
-		<script src="../tests.js"></script>
-		<script>
-			mocha.run();
+			require('harness').run();
 		</script>
 	</body>
 </html>

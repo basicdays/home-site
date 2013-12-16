@@ -23,6 +23,7 @@
 	"devel": true,
 	"node": true,
 	"globals": {
+		"mocha": true,
 		"describe": true,
 		"it": true,
 		"emit": true
