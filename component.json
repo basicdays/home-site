@@ -4,8 +4,8 @@
 	"description": "Home site for http://basicdays.com",
 	"version": "0.0.1",
 	"license": "MIT",
-	"local": ["home", "testClient"],
+	"local": ["boot"],
 	"paths": [
-		"lib/webUI/endpoints", "test"
+		"lib/webUI/components"
 	]
 }
