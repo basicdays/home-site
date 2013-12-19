@@ -16,7 +16,7 @@ exports = module.exports = function(grunt) {
 		shell: {
 			options: { stdout: true, stderr: true, execOptions: { env: env }},
 			componentInstall: {command: 'component install --dev'},
-			componentBuild: {command: 'component build --out ./lib/webUI/public/build'},
+			componentBuild: {command: 'component build --out ./lib/web-ui/public/build'},
 			componentBuildTest: {command: 'component build --out ./test/build'},
 			jshint: {command: 'jshint *.js **/*.js'},
 			mocha: {command: 'mocha --harmony-generators --reporter spec --timeout 15s'},
@@ -24,12 +24,12 @@ exports = module.exports = function(grunt) {
 			testServer: {command: 'http-server test'}
 		},
 
-		clean: ['components', 'lib/webUI/public/build', 'test/build'],
+		clean: ['components', 'lib/web-ui/public/build', 'test/build'],
 
 		watch: {
 			options: { spawn: false, interval: 500 },
 			components: {
-				files: ['lib/webUI/components/**/*', 'test/components/**/*'],
+				files: ['lib/web-ui/components/**/*', 'test/components/**/*'],
 				tasks: ['shell:componentBuild', 'shell:componentBuildTest']
 			}
 		}

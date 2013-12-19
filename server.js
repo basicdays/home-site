@@ -1,2 +1,2 @@
 "use strict";
-require('webUI').boot();
+require('web-ui').boot();

@@ -6,6 +6,6 @@
 	"license": "MIT",
 	"local": ["boot"],
 	"paths": [
-		"lib/webUI/components"
+		"lib/web-ui/components"
 	]
 }
