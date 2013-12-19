@@ -11,3 +11,7 @@ build.js
 
 # Editor Files
 *~
+
+# local files
+.migrate
+config.json

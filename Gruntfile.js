@@ -1,7 +1,7 @@
 'use strict';
+var path = require('path'),
+	clone = require('clone-component');
 
-var path = require('path');
-var clone = require('clone-component');
 
 exports = module.exports = function(grunt) {
 	//add lib folder to require path; add node_modules bin programs to shell path
@@ -35,6 +35,7 @@ exports = module.exports = function(grunt) {
 		}
 	});
 
+	grunt.loadTasks('tasks');
 	grunt.loadNpmTasks('grunt-shell');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-watch');
