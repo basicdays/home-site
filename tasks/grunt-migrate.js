@@ -1,7 +1,7 @@
 'use strict';
 var exec = require('child_process').exec,
-	path = require('path'),
-	clone = require('clone-component');
+    path = require('path'),
+    clone = require('clone-component');
 
 
 //add lib folder to require path; add node_modules bin programs to shell path

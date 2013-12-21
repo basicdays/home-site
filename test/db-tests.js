@@ -1,7 +1,7 @@
 'use strict';
 var co = require('co'),
-	should = require('chai').should(),
-	db = require('web-ui/db');
+    should = require('chai').should(),
+    db = require('web-ui/db');
 
 
 describe('db', function() {

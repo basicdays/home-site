@@ -1,6 +1,6 @@
 'use strict';
 var path = require('path'),
-	clone = require('clone-component');
+    clone = require('clone-component');
 
 
 exports = module.exports = function(grunt) {
