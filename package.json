@@ -24,10 +24,8 @@
     "express": "~3.4.4",
     "ejs": "~0.8.5",
     "co": "~2.3.0",
-    "clone-component": "~0.1.0",
-    "pg": "~2.8.4",
-    "thunkify": "0.0.1",
-    "co-fs": "~1.1.1"
+    "co-fs": "~1.1.1",
+    "co-pg": "~0.1.0"
   },
   "devDependencies": {
     "mocha": "~1.14.0",
